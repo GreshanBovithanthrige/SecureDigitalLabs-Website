@@ -1,0 +1,202 @@
+/* =========================================
+   Secure Digital Labs
+   ========================================= */
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html,
+body {
+    height: 100%;
+}
+
+body {
+    background: #000;
+    color: #ffffff;
+    font-family: 'Inter', sans-serif;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    min-height: 100vh;
+    text-align: center;
+    overflow-x: hidden;
+}
+
+/* =========================================
+   Hero
+   ========================================= */
+
+.hero {
+    flex: 1;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 60px 20px;
+}
+
+.hero-content {
+    max-width: 760px;
+    margin: auto;
+}
+
+/* =========================================
+   Logo
+   ========================================= */
+
+.logo {
+    width: 90px;
+    height: 90px;
+    border: 2px solid #ffffff;
+    border-radius: 18px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 0 auto 35px;
+    font-size: 2rem;
+    font-weight: 800;
+    letter-spacing: 3px;
+    transition: all 0.3s ease;
+}
+
+.logo:hover {
+    transform: translateY(-4px);
+    border-color: #0d6efd;
+    color: #0d6efd;
+}
+
+/* =========================================
+   Typography
+   ========================================= */
+
+h1 {
+    font-size: clamp(2.5rem, 6vw, 4.5rem);
+    font-weight: 800;
+    margin-bottom: 18px;
+    letter-spacing: -1px;
+}
+
+.tagline {
+    color: #0d6efd;
+    font-size: 1.2rem;
+    font-weight: 600;
+    margin-bottom: 35px;
+}
+
+.description {
+    color: #b8b8b8;
+    font-size: 1.1rem;
+    line-height: 1.8;
+    max-width: 700px;
+    margin: 0 auto 40px;
+}
+
+/* =========================================
+   Status
+   ========================================= */
+
+.status {
+    display: inline-block;
+
+    background: #111;
+    border: 1px solid #222;
+    border-radius: 999px;
+
+    padding: 14px 28px;
+
+    color: #d9d9d9;
+    font-size: .95rem;
+    line-height: 1.6;
+
+    margin: 0 auto;
+}
+
+
+
+/* =========================================
+   Footer
+   ========================================= */
+
+footer {
+    padding: 40px 20px;
+}
+
+.social-links {
+    display: flex;
+    justify-content: center;
+    gap: 28px;
+    margin-bottom: 25px;
+}
+
+.social-links a {
+    color: #8c8c8c;
+    font-size: 1.8rem;
+    transition: all .25s ease;
+}
+
+.social-links a:hover {
+    color: #0d6efd;
+    transform: translateY(-5px);
+}
+
+.contact-email {
+    margin-bottom: 15px;
+    font-size: .95rem;
+}
+
+.contact-email a {
+    color: #bdbdbd;
+    text-decoration: none;
+    transition: .25s;
+}
+
+.contact-email a:hover {
+    color: #0d6efd;
+}
+
+.copyright {
+    color: #666666;
+    font-size: .85rem;
+}
+
+/* =========================================
+   Responsive
+   ========================================= */
+
+@media (max-width: 768px) {
+
+    .hero {
+        padding: 40px 25px;
+    }
+
+    .logo {
+        width: 75px;
+        height: 75px;
+        font-size: 1.6rem;
+        margin-bottom: 28px;
+    }
+
+    h1 {
+        font-size: 2.4rem;
+    }
+
+    .tagline {
+        font-size: 1rem;
+        line-height: 1.6;
+    }
+
+    .description {
+        font-size: 1rem;
+    }
+
+    .social-links {
+        gap: 22px;
+    }
+
+    .social-links a {
+        font-size: 1.5rem;
+    }
+
+}
